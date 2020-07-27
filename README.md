@@ -1,2 +1,2 @@
 # classToggler
-Simple ES6+ Library to create triggers to toggle classes.
+Simple ES6+ Library to create triggers that toggle a class

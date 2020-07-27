@@ -17,7 +17,6 @@ const toggleClickHandler = function(event) {
   const toggleElement = event.currentTarget;
   const toggleTarget = document.querySelector(toggleElement.dataset.toggleTarget) || toggleElement;
   const toggleClass = toggleElement.dataset.toggle;
-  console.log(toggleElement, toggleTarget, toggleClass);
 
   toggleTarget.classList.toggle(toggleClass);
   fireEvent(options.toggleEvent, toggleElement);

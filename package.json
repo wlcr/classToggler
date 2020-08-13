@@ -1,5 +1,5 @@
 {
-  "name": "classToggle",
+  "name": "simpleclasstoggle",
   "version": "0.0.1",
   "description": "Simple ES6+ Library to create triggers that toggle a class",
   "main": "classToggle.js",

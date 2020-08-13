@@ -1,18 +1,22 @@
-# classToggle
+# simpleClassToggle
 Simple ES6+ Library to create triggers that toggle a class
 
 ## :floppy_disk: Development Team
 - [Will Christenson](https://github.com/MrSpecific) (Egalitarian Project Lead :unicorn:)
 
 ## :wrench: Setup & Usage
-Simply drop-in and import the module into your code, and initialize
+Install the package as a dependency
 ```
-import classToggle from './classToggle';
+npm i simpleclasstoggle
+```
+Then, simply import the module into your code, and initialize
+```
+import classToggle from 'simpleclasstoggle';
 
 classToggle.init();
 ```
 
-To create a toggle, simply apply a few data-attributes to a button of your choosing:
+To create a toggle, apply a few data-attributes to a button of your choosing:
 - `data-toggle="{className}"` with `{className}` being the class you'd like to toggle.
 - `data-toggle-target="{selector}"` with `{selector}` being a valid selector for `document.querySelector` to toggle the class on (will target _this_ element if not included)
 

@@ -1,0 +1,23 @@
+{
+  "name": "classToggler",
+  "version": "1.0.0",
+  "description": "Simple ES6+ Library to create triggers that toggle a class",
+  "main": "classToggler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrSpecific/classToggler.git"
+  },
+  "keywords": [
+    "ES6",
+    "Javascript"
+  ],
+  "author": "Will Christenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrSpecific/classToggler/issues"
+  },
+  "homepage": "https://github.com/MrSpecific/classToggler#readme"
+}

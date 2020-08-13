@@ -1,6 +1,6 @@
 {
   "name": "simpleclasstoggle",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple ES6+ Library to create triggers that toggle a class",
   "main": "classToggle.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrSpecific/classToggle.git"
+    "url": "git+https://github.com/MrSpecific/simpleClassToggle.git"
   },
   "keywords": [
     "ES6",
@@ -17,7 +17,7 @@
   "author": "Will Christenson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MrSpecific/classToggle/issues"
+    "url": "https://github.com/MrSpecific/simpleClassToggle/issues"
   },
-  "homepage": "https://github.com/MrSpecific/classToggle"
+  "homepage": "https://github.com/MrSpecific/simpleClassToggle"
 }

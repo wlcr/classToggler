@@ -1,4 +1,4 @@
-# classToggler
+# classToggle
 Simple ES6+ Library to create triggers that toggle a class
 
 ## :floppy_disk: Development Team
@@ -7,9 +7,9 @@ Simple ES6+ Library to create triggers that toggle a class
 ## :wrench: Setup & Usage
 Simply drop-in and import the module into your code, and initialize
 ```
-import classToggler from './classToggler';
+import classToggle from './classToggle';
 
-classToggler.init();
+classToggle.init();
 ```
 
 To create a toggle, simply apply a few data-attributes to a button of your choosing:
@@ -23,7 +23,7 @@ For example:
 <div id="my-element">Some cool progressive-disclosure content here</div>
 ```
 
-_Note: classToggler does not handle any of the styling of elements, it simply toggles a class - you must add your own styling._
+_Note: classToggle does not handle any of the styling of elements, it simply toggles a class - you must add your own styling._
 
 ## Events
 When the toggle is activated, it will toggle the class on the targeted element, as well as firing a custom event on that element (by default, `toggleTarget`), if you'd like to add any additional event listeners.

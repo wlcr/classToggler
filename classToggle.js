@@ -31,9 +31,9 @@ const fireEvent = (name, entry) => {
   entry.dispatchEvent(event);
 };
 
-const classToggler = {
+const classToggle = {
   options,
   init: toggleInit
 }
 
-export default classToggler;
+export default classToggle;

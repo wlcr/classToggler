@@ -1,6 +1,6 @@
 const options = {
   toggleSelector: '[data-toggle]',
-  toggleEvent: 'toggle',
+  toggleEvent: 'toggleClass',
 }
 
 const toggleInit = function() {
@@ -19,7 +19,7 @@ const toggleClickHandler = function(event) {
   const toggleClass = toggleElement.dataset.toggle;
 
   toggleTarget.classList.toggle(toggleClass);
-  fireEvent(options.toggleEvent, toggleElement);
+  fireEvent(options.toggleEvent, toggleTarget);
 }
 
 const fireEvent = (name, entry) => {

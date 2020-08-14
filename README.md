@@ -18,7 +18,7 @@ classToggle.init();
 
 To create a toggle, apply a few data-attributes to a button of your choosing:
 - `data-toggle="{className}"` with `{className}` being the class you'd like to toggle.
-- `data-toggle-target="{selector}"` with `{selector}` being a valid selector for `document.querySelector` to toggle the class on (will target _this_ element if not included)
+- `data-toggle-target="{selector}"` with `{selector}` being a valid selector for `document.querySelectorAll` to toggle the class on (will target _this_ element if not included)
 
 For example:
 ```

@@ -15,11 +15,15 @@ const toggleInit = function() {
 
 const toggleClickHandler = function(event) {
   const toggleElement = event.currentTarget;
-  const toggleTarget = document.querySelector(toggleElement.dataset.toggleTarget) || toggleElement;
+  const toggleTargets = toggleElement.dataset.toggleTarget && document.querySelectorAll(toggleElement.dataset.toggleTarget) || [toggleElement];
   const toggleClass = toggleElement.dataset.toggle;
 
-  toggleTarget.classList.toggle(toggleClass);
-  fireEvent(options.toggleEvent, toggleTarget);
+  if(!toggleTargets) return;
+
+  toggleTargets.forEach((toggleTarget) => {
+    toggleTarget.classList.toggle(toggleClass);
+    fireEvent(options.toggleEvent, toggleTarget);
+  });
 }
 
 const fireEvent = (name, entry) => {

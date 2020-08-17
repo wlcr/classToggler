@@ -1,6 +1,6 @@
 {
   "name": "simpleclasstoggle",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple ES6+ Library to create triggers that toggle a class",
   "main": "classToggle.js",
   "scripts": {

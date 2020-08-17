@@ -27,7 +27,15 @@ For example:
 <div id="my-element">Some cool progressive-disclosure content here</div>
 ```
 
+If your script isn't deferred or loaded in the footer, make sure to wait on init until your elements are loaded:
+
+```
+document.addEventListener('DOMContentLoaded', () => {
+  classToggle.init();
+});
+```
+
 _Note: classToggle does not handle any of the styling of elements, it simply toggles a class - you must add your own styling._
 
 ## Events
-When the toggle is activated, it will toggle the class on the targeted element, as well as firing a custom event on that element (by default, `toggleTarget`), if you'd like to add any additional event listeners.
+When the toggle is activated, it will toggle the class on the targeted element, as well as firing a custom event on that element (by default, `toggleClass`), if you'd like to add any additional event listeners.

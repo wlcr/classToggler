@@ -1,6 +1,6 @@
 const options = {
   toggleSelector: '[data-toggle]',
-  toggleEvent: 'toggle',
+  toggleEvent: 'toggleClass',
 }
 
 const toggleInit = function() {
@@ -15,11 +15,15 @@ const toggleInit = function() {
 
 const toggleClickHandler = function(event) {
   const toggleElement = event.currentTarget;
-  const toggleTarget = document.querySelector(toggleElement.dataset.toggleTarget) || toggleElement;
+  const toggleTargets = toggleElement.dataset.toggleTarget && document.querySelectorAll(toggleElement.dataset.toggleTarget) || [toggleElement];
   const toggleClass = toggleElement.dataset.toggle;
 
-  toggleTarget.classList.toggle(toggleClass);
-  fireEvent(options.toggleEvent, toggleElement);
+  if(!toggleTargets) return;
+
+  toggleTargets.forEach((toggleTarget) => {
+    toggleTarget.classList.toggle(toggleClass);
+    fireEvent(options.toggleEvent, toggleTarget);
+  });
 }
 
 const fireEvent = (name, entry) => {
@@ -31,9 +35,9 @@ const fireEvent = (name, entry) => {
   entry.dispatchEvent(event);
 };
 
-const classToggler = {
+const classToggle = {
   options,
   init: toggleInit
 }
 
-export default classToggler;
+export default classToggle;

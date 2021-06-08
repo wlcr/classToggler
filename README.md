@@ -1,6 +1,8 @@
 # simpleClassToggle
 Simple ES6+ Library to create triggers that toggle a class
 
+*Version 0.1.1*
+
 ## :floppy_disk: Development Team
 - [Will Christenson](https://github.com/MrSpecific) (Egalitarian Project Lead :unicorn:)
 

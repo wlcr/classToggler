@@ -1,6 +1,8 @@
 # simpleClassToggle
 Simple ES6+ Library to create triggers that toggle a class
 
+*Version 0.1.1*
+
 ## :floppy_disk: Development Team
 - [Will Christenson](https://github.com/MrSpecific) (Egalitarian Project Lead :unicorn:)
 
@@ -51,11 +53,16 @@ _Note: classToggle does not handle any of the styling of elements, it simply tog
 When the toggle is activated, it will toggle the class on the targeted element, as well as firing a custom event on that element (by default, `toggleClass`), if you'd like to add any additional event listeners.
 
 ## Callbacks
-Callback functions will receive one argument - `toggleTarget` 
+Callback functions will receive two arguments:
+1. `toggleTarget` - The element that is currently having a class toggled on
+2. `toggleElement` - The element that triggered the classToggle
+
+***Note: Callback will be called multiple times, if the target selector matches multiple elements on the page***
+
 ```js
 classToggle.init({
-  callback: (toggleTarget) => {
-    console.log(toggleTarget);
+  callback: (toggleTarget, toggleElement) => {
+    console.log(toggleTarget, toggleElement);
   },
 });
 ```

@@ -26,7 +26,7 @@ const toggleClickHandler = (event) => {
     toggleTarget.classList.toggle(toggleClass);
 
     try {
-      options.callback && options.callback(toggleTarget);
+      options.callback && options.callback(toggleTarget, toggleElement);
     } finally {
       fireEvent(options.toggleEvent, toggleTarget);
     }
